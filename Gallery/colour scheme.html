@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Color Scheme Picker</title>
+	<style>
+		.cell {
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			margin-right: 10px;
+			cursor: pointer;
+			border: 1px solid #000;
+			box-sizing: border-box;
+		}
+		.cell:hover {
+			opacity: 0.8;
+		}
+		#tetris-block {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="tetris-block">
+		<div class="cell" id="cell1"></div>
+		<div class="cell" id="cell2"></div>
+		<div class="cell" id="cell3"></div>
+	</div>
+
+	<script>
+		// set initial color scheme
+		var color1 = "#F8B195";
+		var color2 = "#F67280";
+		var color3 = "#C06C84";
+
+		// set cell colors
+		document.getElementById("cell1").style.backgroundColor = color1;
+		document.getElementById("cell2").style.backgroundColor = color2;
+		document.getElementById("cell3").style.backgroundColor = color3;
+		
+	</script>

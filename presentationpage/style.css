@@ -1,0 +1,55 @@
+/*get background image and initialize poping sanserif font*/
+body { 
+  background-image: url('zd6.jpg');
+  background-size: cover;
+  background-position: center;
+ font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.progress{
+
+	width: 30rem; 
+	height: 0.25rem;s
+	overflow: hidden;
+}
+/*animation bar inner part*/
+.progress .inner{
+	background-color:#FFDF00;
+	height:100%;
+	transform-origin: left;
+	animation: progress 1s infinite;
+}
+/*animation part*/
+@keyframes progress{
+	from{transform: scaleX(5%) translateX(-5%);}
+	to{transform: scaleX(75%) translateX(130%);}
+}

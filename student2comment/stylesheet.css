@@ -1,0 +1,369 @@
+
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-decoration:none;
+list-style:none;
+}
+
+:root{
+
+
+--bg-color:#222327;
+--text-color:#fff;
+--main-color:#29fd53;
+
+}
+
+body{
+
+min-height:var(--bg-color);
+color:var(--text-color);
+background-color:var(--bg-color);
+
+
+
+
+
+
+}
+
+
+/* Section student2 navigation bar Start */
+
+nav .color{
+
+color:var(--main-color)
+
+
+}
+h4{
+font-family: "Pacifico", cursive;
+
+
+}
+nav .color{
+
+  color:var(--main-color)
+  }
+  h4{
+  font-family: "Pacifico", cursive;
+  }
+
+#header nav{
+
+position:fixed;
+width:100%;
+top:0;
+right:0;
+font-size: 30px;
+z-index: 1;
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:black;
+padding:28px 5%;
+color:white;
+
+}
+.class{
+
+  font-size:1.3rem;
+  
+  }
+.logo{
+
+display:flex;
+align-items:center;
+margin-left:50px;
+}
+.logo i{
+color:var(--main-color);
+font-size:28px;
+margin-right:3px;
+
+}
+
+.logo span{
+color:var(--text-color);
+font-size:1.5rem;
+font-weight:600;
+}
+#navbar{
+display:flex;
+white-space:nowrap;
+font-family: Arial, sans-serif;
+}
+
+#navbar a{          
+color:var(--text-color);
+font-size:1.3rem;
+padding:5px 0;
+margin:30px;
+}
+
+#navbar a:hover{
+color:var(--main-color);
+}
+
+#navbar a.active{
+color:var(--main-color);
+}
+
+.navRight{
+
+display:flex;
+align-items:center;
+}
+
+
+
+
+
+
+/* Section navigation bar End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section student2 comment Start */
+
+.comment {
+
+  border: 2px solid var(--main-color);
+  font-family: "Pacifico", cursive;
+  padding:50px;
+  width:750px;
+  margin: 20px auto; /* added auto margin to center horizontally */
+
+}
+
+
+nav .all{
+
+font-size:25px;
+
+}
+
+.comment span{
+
+color:var(--main-color);
+
+
+}
+h1{
+
+font-family: "Pacifico", cursive;  
+margin-top: 80px;
+margin-bottom:40px;
+text-align:center;
+
+}
+
+.form_group{
+
+margin-bottom:5px;
+padding:20px;
+
+
+}
+
+
+.form_group label{
+
+display:block;
+margin-bottom:10px;
+
+
+}
+
+.form_group input{
+
+
+width:100%;
+padding:10px;
+font-size:14px;
+
+
+}
+
+.form_group textarea{
+
+
+width:100%;
+font-size:14px;
+padding:12px;
+
+}
+.form_group p{
+
+font-size:10px;
+margin-top:5px;
+visibility: hidden;
+
+
+}
+
+.form_group select{
+
+
+width:100%;
+padding:12px;
+font-size:14px;
+
+
+}
+
+
+
+form button{
+
+width:100%;
+padding:12px;
+color:white;
+background-color: var(--main-color);
+font-weight:1200;
+border-radius:50px;
+
+
+}
+
+.form_group.error p{
+
+color:red;
+visibility: visible;
+
+
+}
+
+.form_group.error textarea{
+
+  border-color:red;
+  visibility: visible;
+  
+  
+  }
+
+  .form_group.error input{
+
+    border-color:red;
+    
+    
+    }
+
+
+
+.form_group.success input{
+
+  border-color:var(--main-color);
+  
+  
+  }
+
+
+  .form_group.success textarea{
+
+    border-color:var(--main-color);
+    
+    
+    }  
+  
+
+
+
+/* Section comment End */
+
+footer{
+  color: white;
+  text-align:center;
+  width:100%;
+  padding:35px 15px;
+  background-color: black;
+ 
+  bottom: 0;
+  margin-top: 100px;
+  }
+  
+footer p{
+  font-size: 18px;
+  font-weight: 500;
+}
+  
+  footer h1 span{
+  
+  color:var(--main-color);
+  
+  }
+  footer h1{
+  font-size: 38px;
+  font-family:"Pacifico", cursive;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  
+  
+  }
+  
+  footer .copyright{
+  
+  padding-bottom:30px;
+  
+  
+  }
+  
+  
+  footer .back {
+  padding: 10px;
+  background: var(--main-color);
+  color: black;
+  letter-spacing: 3px;
+  border-radius: 25px;
+  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

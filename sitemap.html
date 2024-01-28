@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>
+        Sitemap
+      </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Sitemap/style.css">
+        <!-- Poppins font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">       
+    </head>
+   
+<body>
+  <div id="header">
+
+
+    <nav>
+
+        <h4><span class="color">T</span>ravel</h4>
+        <ul id="navbar">
+
+            <!-- Navbar values -->
+            <li><a href="home.html">Home</a></li>
+            <li><a href="comment.html">Comments</a></li>
+            <li><a href="buyproduct.html">Shop</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#" class="active">Site Map</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+
+
+        </ul>
+
+
+
+    <div class="navRight">
+
+
+
+    </div>
+    </nav>
+
+
+
+
+
+</div>
+
+<!-- Svg diagram -->
+<svg width="1200" height="550">
+    <!-- g2 is the home circle and all the polylines-->
+    <g id="group2" transform="translate (130,-30)">
+    <g class="circle-wrapper1" id="one">
+    <circle cx="500" cy="250" r="50" ></circle>
+    <text x="500" y="255" text-anchor="middle" font-size="20">Home</text>
+    </g>
+    <polyline points="500 300,500 320" stroke="black" stroke-width="2"></polyline>
+    <polyline points="120 320,500 320" stroke="black" stroke-width="2"></polyline>
+    <polyline points="120 320,120 420" stroke="black" stroke-width="2"></polyline>
+    <polyline points="270 320,270 420" stroke="black" stroke-width="2"></polyline>
+    <polyline points="420 320,420 420" stroke="black" stroke-width="2"></polyline>
+    <polyline points="500 320,870 320" stroke="black" stroke-width="2"></polyline>
+    <polyline points="570 320,570 420" stroke="black" stroke-width="2"></polyline>
+    <polyline points="720 320,720 420" stroke="black" stroke-width="2"></polyline>
+    <polyline points="870 320,870 420" stroke="black" stroke-width="2"></polyline>
+</g>
+
+<!-- g1 is all the other circles-->
+  <g id="group1" transform="translate (150,50)" >
+  <g class="circle-wrapper" id="two">
+    <circle cx="100" cy="405" r="50" ></circle>
+    <text x="100" y="405"  >Cart</text>
+  </g>
+  <g class="circle-wrapper" id="three">
+    <circle cx="250" cy="405" r="50" ></circle>
+    <text x="250" y="405" >Buy Products</text>
+  </g>
+  <g class="circle-wrapper" id="four">
+    <circle cx="400" cy="405" r="50" ></circle>
+    <text x="400" y="405" >Query form</text>
+  </g>
+  <g class="circle-wrapper" id="five">
+    <circle cx="550" cy="405" r="50"></circle>
+    <text x="550" y="405" >Quiz</text>
+  </g>
+  <g class="circle-wrapper" id="six">
+    <circle cx="700" cy="405" r="50" ></circle>
+    <text x="700" y="405" >Student Details</text>
+  </g>
+  <g class="circle-wrapper" id="seven">
+    <circle cx="850" cy="405" r="50" ></circle>
+    <text x="850" y="405" >Gallery</text>
+  </g>
+
+</g>
+</svg>
+
+<!-- Footer Start -->
+<footer id="footer" >
+  <h1><span>T</span>ravel</h1>
+  <p>Thank you for choosing us as your travel partner. Let's explore the world together! </p>
+
+  <div class="credit">
+      <p>Designed By <a href="Student4.html">Student 4</a></p>
+  </div>
+  <div class="copyright">
+      <p>&copy;Copyright  Coding. All Rights Reserved</p>
+
+  </div>
+  <a href="#header" class="back">Back to Top</a>
+</footer>
+<!-- Footer End -->
+<script>
+  // redirect on click for all svg circles
+document.getElementById("one").
+				addEventListener("click", function() {
+					document.location.href="home.html";
+			});
+
+document.getElementById("two").
+		addEventListener("click", function() {
+		document.location.href="buyproduct.html#cart";
+});
+
+document.getElementById("three").
+		addEventListener("click", function() {
+		document.location.href="buyproduct.html";
+});
+
+document.getElementById("four").
+		addEventListener("click", function() {
+		document.location.href="comment.html";
+});
+
+document.getElementById("five").
+		addEventListener("click", function() {
+		document.location.href="quiz.html";
+});
+
+document.getElementById("six").
+	  addEventListener("click", function() {
+		document.location.href="aboutus.html";
+});
+
+document.getElementById("seven").
+		addEventListener("click", function() {
+		document.location.href="gallery.html";
+			});
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

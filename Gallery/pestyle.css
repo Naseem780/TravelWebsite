@@ -1,0 +1,68 @@
+body {
+  background-image: url("bbb.jpg");
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  
+}
+.main{
+  margin-left: 130px;
+  margin-top: 100px;
+}
+#tasks{
+  margin-top: 200px;
+  margin-left: 100px;
+}
+.pages{
+  display: inline-block;
+}
+.pages:hover{
+  cursor: pointer;
+  color: blue;
+}
+.card {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.card > * {
+  grid-area: main;
+}
+
+.card > .image {
+	
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 200ms, filter 200ms;
+  margin: 0 auto;
+}
+
+.card > .text {
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 200ms, transform 200ms;
+  margin: auto;
+}
+
+.card:is(:hover,:focus) > .image {
+  transform: scale(1.1);
+  filter: brightness(0.2);
+}
+
+.card:is(:hover,:focus) > .text {
+  transform: scale(1,2);
+  opacity: 1;
+}

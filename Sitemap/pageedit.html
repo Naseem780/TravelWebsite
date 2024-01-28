@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student 4 - page editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pestyle.css">
+  </head>
+  <body><br>
+	<div class="card">
+	<img class="image" src="me (2).jpg" alt="editor is here">
+	<p class="text">Aaqil Ruzzan - Student 4<br>w1953256<br><br>Creator of the Sitemap<br>
+Creator of the Image Gallery<br>Creator of the content page - italy</p>
+	</div>
+    <div class="main">
+    <div >Hover the image for info</div>
+    <div >More on:</div>
+    <div class="pages" id="sitemap">The Sitemap</div><br>
+    <div class="pages"id="gallery">Gallery</div><br>
+    <div class="pages"id="cp">Content page- italy</div>
+    </div>
+
+  <div id="tasks"></div>
+  <p></p>
+  <!--Content page done using html and css</p>-->
+  </body>
+  <script>
+    const display=document.getElementById("tasks");
+    document.getElementById("sitemap").addEventListener("click",function(){
+      display.innerHTML="Sitemap diagram done by svg, hover effects done by css and redirect by clicks done by js"
+    })
+    document.getElementById("gallery").addEventListener("click",function(){
+      display.innerHTML="Gallery basic elements made by html,grid layout applied by css, colour schemes, font changes done through javascript "
+    })
+    document.getElementById("cp").addEventListener("click",function(){
+      display.innerHTML="Content page done using html and css"
+    })
+  </script>
+</html>

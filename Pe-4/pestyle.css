@@ -1,0 +1,94 @@
+/* Setting the background image, font family, and text color for the webpage */
+body {
+  background-image: url("bbb.jpg");
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  }
+  
+  /* Styling the main content */
+  .main{
+  margin-left: 130px;
+  margin-top: 100px;
+  }
+  
+  /* Styling the tasks section */
+  #tasks{
+  margin-top: 200px;
+  margin-left: 100px;
+  }
+  
+  /* Styling the pages section */
+  .pages{
+  display: inline-block;
+  }
+  
+  /* Setting the hover effect on the pages */
+  .pages:hover{
+  cursor: pointer;
+  color: blue;
+  }
+  
+  /* Setting the color of the link in the tasks section */
+  #tasks a{
+  color: purple;
+  }
+  
+  /* Styling the card section */
+  .card {
+  height: 300px;
+  width: 300px;
+  border-radius: 4px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  /* Styling the image inside the card */
+  .card > * {
+  grid-area: main;
+  }
+  
+  /* Styling the image inside the card */
+  .card > .image {
+  
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 200ms, filter 200ms;
+  margin: 0 auto;
+  }
+  
+  /* Styling the text inside the card */
+  .card > .text {
+  opacity: 0;
+  color: white;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 200ms, transform 200ms;
+  margin: auto;
+  }
+  
+  /* Setting the hover effect on the card image */
+  .card:is(:hover,:focus) > .image {
+  transform: scale(1.1);
+  filter: brightness(0.2);
+  }
+  
+  /* Setting the hover effect on the card text */
+  .card:is(:hover,:focus) > .text {
+  transform: scale(1,2);
+  opacity: 1;
+  }
+  
+  
+  
+  
+  
+  

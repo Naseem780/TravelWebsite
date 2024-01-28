@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	 <!--  Poppins font  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>buyproduct</title>
+	 <!--  Style sheet  -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div id="header">
+    <nav>  <!--  nav bar  -->
+        <h4><span class="color">T</span>ravel</h4>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+                <li><a href="comment.html">Comments</a></li>
+                <li><a href="# "class="active">Shop</a></li>
+                <li><a href="quiz.html" >Quiz</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+        </ul>
+    <div class="navRight">
+    </div>
+    </nav><br><br><br>
+</div>
+    </header>
+    <main>
+	<br>
+      <section id="packages">  <!-- all the packages and details -->
+  <ul>
+	  <li>
+		  <h3>Package 1 - Country: Sri Lanka</h3>
+		  <div class="image-wrapper">  <!--  div class image wraping  -->
+			<img src="package1.png" alt="Package 1 Image">
+			<div class="overlay">  <!--  div class image overlay  -->
+			 <p>Duration : 12 days<br>Traditional food<br>Beach<br>Nature and Wildlife<br>Ayurveda<br>Adventure Activities</p>
+			</div>
+			<div class="detail">
+			<p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $400</p>
+			<button onclick="buy1()">Buy Now</button>  <!--  click buy now get got funtion and scrol cart  -->
+			 </div>
+			</div>
+	  </li>
+	   <li>
+		  <h3>Package 2 - Country: United Kingdom</h3>
+		  <div class="image-wrapper">
+			<img src="package2.png" alt="Package 1 Image">
+			<div class="overlay">
+			 <p>Duration : 14days<br>Rich history and culture<br>World-class universities<br>English language<br>Delicious food and drink</p>
+			</div>
+			<div class="detail">
+			<p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $450</p>
+			  <button onclick="buy2 ()">Buy Now</button>
+		  </div>
+		  </div>
+		</li>
+		<li>
+			  <h3>Package 3 - Country: Italy</h3>
+			  <div class="image-wrapper">
+			  <img src="package3.png" alt="Package 1 Image">
+			  <div class="overlay">
+			 <p>Duration : 10 days<br>Delicious food and wine<br>Shopping<br>Hospitality<br>Transportation</p>
+			</div>
+			<div class="detail">
+			  <p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $500</p>
+			  <button onclick="buy3()">Buy Now</button>
+			  </div>
+			  </div>
+		</li>
+		<li>
+			  <h3>Package 4 - Country: United State</h3>
+			  <div class="image-wrapper">
+			  <img src="package4.png" alt="Package 1 Image">
+			  <div class="overlay">
+			 <p>Duration : 12 days<br>Outdoor activities<br>Food<br>English language<br>beach<br>outdoor activities</p>
+			</div>
+			<div class="detail">
+			  <p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $700</p>
+			  <button onclick="buy4()">Buy Now</button>
+			  </div>
+			  </div>
+		</li>
+		<li>
+			  <h3>Package 5 - Country: Mexico<br></h3>
+			  <div class="image-wrapper">
+			  <img src="package5.png" alt="Package 1 Image">
+			  <div class="overlay">
+			 <p>Duration : 15 days<br>hospitality<br>Diverse landscapes<br>Delicious food<br>Beautiful beaches</p>
+			</div>
+			<div class="detail">
+			  <p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $550</p>
+			  <button onclick="buy5()">Buy Now</button>
+			  </div>
+			  </div>
+		</li>
+		<li>
+			  <h3>Package 6 - Country: India</h3>
+			  <div class="image-wrapper">
+			  <img src="package6.png" alt="Package 1 Image">
+			  <div class="overlay">
+			 <p>Duration : 11 days<br>Natural beauty<br>Spiritual and wellness tourism<br>Historical monuments and architecture<br>Hospitality<br>hiking mountain</p>
+			</div>
+			<div class="detail">
+			  <p><br>Accomodation: Luxuary hotels<br>Transfer Mode: Private Car (Air Conditioned)<br>Meal Plan: Breakfast & Dinner<br></p>
+			  <p>Price: $600</p>
+			  <button onclick="buy6()">Buy Now</button>
+			  </div>
+			  </div>
+		</li>
+  </ul>
+</section>
+    </main>
+	<header>
+	<div class="h1">
+    <h1>Cart Section</h1></div>
+  </header><br>
+	
+<div class="cart">  <!--  cart section  -->
+    <h2>Cart</h2>
+    <div>
+      <label for="package">Package:</label>
+      <select id="package" name="package" required>
+		<option value="" disabled selected>Select a package</option>  <!--  scrol option  -->
+        <option value="400">Package 1 - Sri Lanka ($400)</option>
+        <option value="450">Package 2 - United Kingdom ($450)</option>
+        <option value="500">Package 3 - Italy ($500)</option>
+        <option value="700">Package 4 - United States ($700)</option>
+        <option value="550">Package 5 - Mexico ($550)</option>
+        <option value="600">Package 6 - India ($600)</option>
+      </select>
+    </div>
+    <div>
+      <label for="quantity">Quantity:</label>  <!--  quentity -->
+      <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" required>
+     <button id="add-package-btn">Add Package</button><br>
+    </div><br>
+     <button type="submit" id="confirm-order-btn">Confirm order</button>
+	 
+    <br>
+    <div id="package-list">
+      <p id="total"></p>
+    </div>
+  </div><br>
+  <header>
+    <h1>Check out Section</h1>  <!--  cheakout section  -->
+  </header>
+	<br>
+	<div class="payment-form" >  <!--  Payment form  -->
+	<h2>Payment Details</h2>
+	<div id="editcase" class="editcase"></div><br>
+	<button onclick="showSection()">Edit Personal Details</button><br>
+    <div class="personal-details" style="display: none;">
+    <h2>Personal Details</h2>  <!--  get all personal details input  -->
+    <div>
+      <label for="first-name">First Name *:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    </div>
+    <div>
+      <label for="last-name">Last Name *:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    </div>
+    <div>
+      <label for="email">E-mail *:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+      <label for="Adress">Address *:</label>
+      <input type="text" id="Adress" name="Adress" placeholder="Enter your Adress" required>
+    </div>
+    <div>
+      <label for="phone">Phone No *:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+    </div>
+	<div>
+<button onclick="editcase(),hideSection()">save</button> 
+<button onclick="hideSection()">cancel</button>
+</div>
+  </div>
+  
+
+
+  <div class="payment-details">
+    <div class="card-details">     <!--  card details section  -->
+      <br><img src="card.png" alt="">
+      <div>
+        <label for="name-on-card">Name on Card *:</label>
+        <input type="text" id="name-on-card" name="name-on-card" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="card-number">Card Number *:</label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+      </div>
+      <div>
+        <label for="expire-month">Expire Month *:</label>
+        <input type="number" id="expire-month" name="expiration-month" min="1" max="12" placeholder="MM" required>
+
+      </div>
+      <div>
+        <label for="expire-year">Expire Year *:</label>
+        <input type="Number" id="expire-year" name="expiration-year" min="2023" max="2030" placeholder="YYYY" required>
+      </div>
+      <div>
+        <label for="cvv">CVV *:</label>
+        <input type="Number" id="cvv" name="cvv" min="000" max="999" placeholder="CVV" required>
+      </div>
+	  <button id="save-btn" style="display:none;">Save</button>
+    </div>
+  </div>
+
+  <div class="form-buttons">
+    <button type="submit" id="confirm-btn">Confirm</button>  <!--  click confirm button generate invoice  -->
+    <button type="reset" id="reset">Reset</button>
+  </div>
+</div>
+
+    <br>
+  <div id="invoice-container" class="invoice-hidden"></div>
+
+
+<script src="script.js"></script>
+  
+  
+  <!-- Footer Start -->
+<footer>
+    <h1><span>T</span>ravel</h1>
+    <p>Thank you for choosing us as your travel partner. Let's explore the world together! </p>
+
+    <div class="credit">
+        <p>Designed By <a href="pageedit.html">student 1</a></p>
+    </div>
+    <div class="copyright">
+        <p>&copy;Copyright  Coding. All Rights Reserved</p>
+
+    </div>
+    <a href="#header" class="back">Back to Top</a>
+</footer>
+<!-- Footer End -->
+</body>
+</html>

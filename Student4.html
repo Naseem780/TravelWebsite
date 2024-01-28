@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Student 4 - page editor</title>
+     <!--  Poppins font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Pe-4/pestyle.css">
+  </head>
+  <body>
+    <br>
+     <!--div containing a card that displays the student's information and an image. -->
+	<div class="card">
+	<img class="image" src="Pe-4/me.jpg" alt="editor is here">
+	<p class="text">Aaqil Ruzzan - Student 4<br>w1953256, 20220429<br><br>Creator of the Sitemap<br>
+Creator of the Image Gallery<br>Creator of the content page - italy</p>
+	</div>
+    <div class="main">
+    <div >Hover the image for info</div>
+    <div >Reload the page if it's slow</div>
+    <!-- This div will have clickable text that displays further information and also
+    provides a link to the stated page -->
+    <div >More on:</div>
+    <div class="pages" id="sitemap">The Sitemap</div><br>
+    <div class="pages" id="gallery">Gallery</div><br>
+    <div class="pages" id="cp">Content page- italy</div>
+    </div>
+
+  <div id="tasks"></div>
+  
+ 
+  <script>
+    // Js to ensure the aboce stated functionality works
+    const display=document.getElementById("tasks");
+    document.getElementById("sitemap").addEventListener("click",function(){
+      display.innerHTML="<p><a href='sitemap.html'>Sitemap</a> diagram done by svg<br>hover effects done by css and redirect by clicks done by js<br></p>";
+    })
+    document.getElementById("gallery").addEventListener("click",function(){
+      display.innerHTML="<p><a href='gallery.html'>Gallery</a> basic elements made by html,grid layout applied by css,<br>colour schemes, font changes done through javascript</p> "
+    })
+    document.getElementById("cp").addEventListener("click",function(){
+      display.innerHTML="<p><a href='Italy.html'>Content page</a> done using a responsive flex layout<br>Used CSS to style elements uniquely<br>Simple and responsive</p>"
+    })
+  </script>
+   </body>
+</html>
